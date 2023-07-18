@@ -1,0 +1,2 @@
+- In the problem description, it is not explicitly mentioned how many rows are there in each coach. Assuming the number of rows in a train are 10.
+- Assuming there are mulitple trains and each train has one coach.

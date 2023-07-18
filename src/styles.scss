@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+// regular style toast
+@import 'ngx-toastr/toastr';
+
+// if you'd like to use it without importing all of bootstrap it requires
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+// boostrap 5
+@import 'ngx-toastr/toastr-bs5-alert';
+.active-route{
+    color: rgb(59 130 246)
+}
+
+.seat-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #ccc;
+  }
+  
+  .left-column .seat:nth-child(n+4) {
+    margin-left: 10px;
+  }
+  
+  .right-column .seat:nth-child(n+5) {
+    margin-left: 10px;
+  }
+
+  .seat:nth-child(3) {
+    margin-right: 20px;
+}

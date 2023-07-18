@@ -1,0 +1,11 @@
+<div [formGroup]="addTrainForm" class="relative w-full flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+    <div class="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+      <div class="mx-auto max-w-md">
+        <label for="trainName">Train name</label>
+        <input form type="text" formControlName="trainName" class="py-3 mt-2 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Enter train name">
+        <button (click)="createTrain()" [disabled]="!addTrainForm.valid" type="button" class="py-3 mt-2 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+            Create
+          </button>
+      </div>
+    </div>
+  </div>
